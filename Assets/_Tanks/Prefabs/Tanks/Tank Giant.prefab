@@ -224,13 +224,13 @@ GameObject:
   m_Component:
   - component: {fileID: 8899946406155810980}
   - component: {fileID: 7239805895334923401}
-  - component: {fileID: 934503643139113166}
   - component: {fileID: 7415609939009992402}
   - component: {fileID: 7201085367184376642}
   - component: {fileID: 1157742312808016329}
   - component: {fileID: 3499945452425047010}
   - component: {fileID: 5033268458832488951}
   - component: {fileID: 2726432948042139418}
+  - component: {fileID: -8751500005726581412}
   m_Layer: 9
   m_Name: Tank Giant
   m_TagString: Untagged
@@ -284,29 +284,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
-  m_CollisionDetection: 0
---- !u!65 &934503643139113166
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3791268520189727944}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 3.6319835, y: 4.0238657, z: 5.088995}
-  m_Center: {x: -0.047829747, y: 1.9339933, z: 0.2576667}
+  m_Constraints: 116
+  m_CollisionDetection: 1
 --- !u!114 &7415609939009992402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,8 +331,8 @@ MonoBehaviour:
   m_MaxChargeTime: 2
   m_ShotCooldown: 3
   m_MaxDamage: 70
-  m_ExplosionForce: 100
-  m_ExplosionRadius: 30
+  m_ExplosionForce: 90
+  m_ExplosionRadius: 25
   m_InputUser: {fileID: 0}
 --- !u!82 &1157742312808016329
 AudioSource:
@@ -561,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030896d0325fa3e4d8d7d4cfe2351cb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.TankHealth
-  m_StartingHealth: 600
+  m_StartingHealth: 500
   m_Slider: {fileID: 2636067645798477027}
   m_FillImage: {fileID: 6826771800739802607}
   m_FullHealthColor: {r: 0, g: 1, b: 0, a: 1}
@@ -581,6 +560,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.PowerUpDetector
   m_HasActivePowerUp: 0
+--- !u!135 &-8751500005726581412
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3791268520189727944}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2.5245342
+  m_Center: {x: 0, y: 1.6573367, z: 0.2481041}
 --- !u!1 &3988019316800872009
 GameObject:
   m_ObjectHideFlags: 0

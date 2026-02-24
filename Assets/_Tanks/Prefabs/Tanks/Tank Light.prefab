@@ -224,13 +224,13 @@ GameObject:
   m_Component:
   - component: {fileID: 8899946406155810980}
   - component: {fileID: 7239805895334923401}
-  - component: {fileID: 934503643139113166}
   - component: {fileID: 7415609939009992402}
   - component: {fileID: 7201085367184376642}
   - component: {fileID: 1157742312808016329}
   - component: {fileID: 3499945452425047010}
   - component: {fileID: 5033268458832488951}
   - component: {fileID: 2726432948042139418}
+  - component: {fileID: -6213629230807855769}
   m_Layer: 9
   m_Name: Tank Light
   m_TagString: Untagged
@@ -283,29 +283,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
-  m_CollisionDetection: 0
---- !u!65 &934503643139113166
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3791268520189727944}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.4945774, y: 1.4705032, z: 1.1142029}
-  m_Center: {x: 0.012161732, y: 0.7336542, z: -0.13707924}
+  m_Constraints: 116
+  m_CollisionDetection: 1
 --- !u!114 &7415609939009992402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,9 +327,9 @@ MonoBehaviour:
   m_FireClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
   m_MinLaunchForce: 15
   m_MaxLaunchForce: 30
-  m_MaxChargeTime: 0.5
+  m_MaxChargeTime: 0.6
   m_ShotCooldown: 0.5
-  m_MaxDamage: 180
+  m_MaxDamage: 150
   m_ExplosionForce: 10
   m_ExplosionRadius: 5
   m_InputUser: {fileID: 0}
@@ -560,7 +539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030896d0325fa3e4d8d7d4cfe2351cb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.TankHealth
-  m_StartingHealth: 150
+  m_StartingHealth: 220
   m_Slider: {fileID: 2636067645798477027}
   m_FillImage: {fileID: 6826771800739802607}
   m_FullHealthColor: {r: 0, g: 1, b: 0, a: 1}
@@ -580,6 +559,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.PowerUpDetector
   m_HasActivePowerUp: 0
+--- !u!135 &-6213629230807855769
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3791268520189727944}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.6984178
+  m_Center: {x: -0.0049604177, y: 0.72422385, z: -0.06448543}
 --- !u!1 &3988019316800872009
 GameObject:
   m_ObjectHideFlags: 0
