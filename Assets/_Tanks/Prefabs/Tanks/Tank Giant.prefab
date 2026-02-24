@@ -319,7 +319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4cc0827b572b5408b2cd8eb8b456b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.TankMovement
-  m_PlayerNumber: 1
+  m_PlayerNumber: 2
   m_Speed: 20
   m_TurnSpeed: 360
   m_IsDirectControl: 1
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_FireClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
   m_MinLaunchForce: 15
   m_MaxLaunchForce: 30
-  m_MaxChargeTime: 4
+  m_MaxChargeTime: 2
   m_ShotCooldown: 3
   m_MaxDamage: 70
   m_ExplosionForce: 100

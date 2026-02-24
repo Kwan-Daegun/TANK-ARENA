@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4cc0827b572b5408b2cd8eb8b456b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.TankMovement
-  m_PlayerNumber: 2
+  m_PlayerNumber: 1
   m_Speed: 35
   m_TurnSpeed: 360
   m_IsDirectControl: 1
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184d72ea2424d1443bca885930fe844a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.TankShooting
-  m_Shell: {fileID: 5409530, guid: 4617f893897385e4f9d4cd8c7e019af0, type: 3}
+  m_Shell: {fileID: 5409530, guid: 008ecb1b70bec724fa2cd34255b0d8f8, type: 3}
   m_FireTransform: {fileID: 4808331397821660309}
   m_AimSlider: {fileID: 1367395487519061334}
   m_ShootingAudio: {fileID: 5296481100391742319}
