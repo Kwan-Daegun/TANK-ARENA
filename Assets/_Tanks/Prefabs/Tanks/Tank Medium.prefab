@@ -174,7 +174,7 @@ MonoBehaviour:
   m_ShotCooldown: 1
   m_MaxDamage: 105
   m_ExplosionForce: 30
-  m_ExplosionRadius: 15
+  m_ExplosionRadius: 10
   m_InputUser: {fileID: 0}
 --- !u!82 &1608427984263793922
 AudioSource:
